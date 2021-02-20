@@ -40,7 +40,7 @@ let letterCombinations = s => {
       for(let j = 0; j < arr[1].length; j++){
         res.push(`${arr[0][i]}${arr[1][j]}`)
       }
-    }
+    }  
 
     arr.splice(0, 2, res)
     if(arr.length > 1) comp(arr)
